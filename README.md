@@ -29,6 +29,7 @@ curl -fsSL https://get.docker.com | sh
 docker-compose up -d
 ```
 
+
 Caso queira parar os containers, executar:
 ```bash
 docker-compose down
@@ -40,6 +41,8 @@ Por padrão, o servidor de arquivos estático fica na porta 3000 e o http na por
 #### Exemplo:
 - Servidor de arquivos: 192.168.0.1:3000
 - Servidor HTTP: 192.168.0.1:8000
+
+#### No primeiro minuto talvez a página não retorne nenhuma foto, por favor aguardar um tempinho e atualizar a página novamente. Após isso, ela irá trocar de um em um minuto normalmente.
 
 ## Falta Implementar
 - [ ] CSS na página principal
