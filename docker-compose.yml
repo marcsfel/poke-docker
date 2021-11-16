@@ -1,0 +1,31 @@
+version: "3.7"
+
+networks:
+  poke_net:
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
+
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: ./.docker/poke_server/Dockerfile
+    container_name: poke_static_server
+    networks:
+      poke_net:
+        ipv4_address: 172.28.0.2
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./app:/usr/src/app"
+  app2:
+    build:
+      context: .
+      dockerfile: .docker/apache/Dockerfile
+    container_name: poke_apache
+    networks:
+      poke_net:
+        ipv4_address: 172.28.0.3
+    ports:
+      - "8000:80"
