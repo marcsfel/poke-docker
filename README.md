@@ -12,7 +12,7 @@ O ambiente consiste em dois containers, sendo um server estático feito com o No
 - Clonar projeto 
 
 ```bash
-git clone git@github.com:marcsfel/poke-docker.git
+git clone https://github.com/marcsfel/poke-docker.git
 ```
 
 #### Caso esteja usando ambiente Linux, executar o comando abaixo:
