@@ -46,7 +46,3 @@ Por padrão, o servidor de arquivos estático fica na porta 3000 e o http na por
 - [ ] Fazer o navegador não armazenar o cache da imagem, ou então o site atualizar de forma dinâmica.
 - [ ] Exibir 3 Pokémons ao invés de apenas 1
 - [ ] Form para tentar adivinhar o nome do Pokémon
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
